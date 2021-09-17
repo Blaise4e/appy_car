@@ -9,6 +9,7 @@ import statsmodels.api as sm
 import pandas as pd
 from joblib import load
 from flask import Flask, render_template, request
+import uvicorn
 
 
 ################################################################################
@@ -49,4 +50,4 @@ def estim():
     return render_template('result.html', title="Estimation du prix", price=estimate_price, data=data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=9999)
+    uvicorn.app.run(host='0.0.0.0', port=9999)
