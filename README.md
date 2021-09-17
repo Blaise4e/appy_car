@@ -1,4 +1,4 @@
-# price_predict
+# appy_car
 
 This project predict the car's price taking in conscideration user's requests.
 
